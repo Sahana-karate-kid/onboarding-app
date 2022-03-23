@@ -6,6 +6,7 @@ import Header from './components/Header';
 import SecondPage from './components/SecondPage';
 import ThirdPage from './components/ThirdPage';
 import FinalPage from './components/FinalPage';
+import './components/Style.css'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Header />
       </div>
       <Routes>
-       <Route path="/" element={<FirstPage />} exact={true}></Route>
+       <Route path="/" element={<FirstPage />} exact={true} className='progress-step'></Route>
        <Route path="/Secondpage" element={<SecondPage />}></Route>
        <Route path="/Thirdpage" element={<ThirdPage />}></Route>
        <Route path="/FinalPage" element={<FinalPage />}></Route>

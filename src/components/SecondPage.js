@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Form, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import './Style.css';
 
 function SecondPage(props){
   const {  handleSubmit } = useForm();
@@ -12,8 +13,11 @@ function SecondPage(props){
   };
 
   return (
-    <div>
-        <h1>This is page 2</h1>
+    <div className='main__div'>
+      <div>
+      <h1>Let's set up a home for you to work</h1>
+      <p className='tag__line'>You can always create another workspace later</p>
+      </div>        
     <Form className="input-form" onSubmit={handleSubmit(onSubmit)}>
       <div className="col-md-6 offset-md-3">
         <Form.Group controlId="first_name">
@@ -33,6 +37,7 @@ function SecondPage(props){
             placeholder="Enter your Workspace URLs if any"
             autoComplete="off"/>
           </Form.Group>
+          <br />
 
         <Button variant="primary" type="submit">
           Next
