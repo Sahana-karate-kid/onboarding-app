@@ -1,10 +1,14 @@
 import Progress from './Progress';
+import logo from '../assets/eden_logo.png';
+import './Style.css';
 
 function Header (){    
 
     return (
     <div>
-        <h1>Onbaording Forms</h1>
+        <div className='logo_container'>
+        <img src={logo} alt='' className='logo'></img>
+        </div>
         <Progress />
     </div>
 
