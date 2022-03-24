@@ -12,8 +12,9 @@ function FirstPage () {
   const onSubmit = async data => { 
     console.log(data);
     localStorage.setItem("DISPLAY", data.display_name)
-    navigate('/SecondPage');
-    
+    navigate('/SecondPage');   
+
+
   };
 
   return (

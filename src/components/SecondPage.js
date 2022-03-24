@@ -20,23 +20,26 @@ function SecondPage(props){
       </div>        
     <Form className="input-form" onSubmit={handleSubmit(onSubmit)}>
       <div className="col-md-6 offset-md-3">
-        <Form.Group controlId="first_name">
+        <Form.Group controlId="workspace_name">
           <Form.Label>Workspace Name</Form.Label>
           <Form.Control
             type="text"
-            name="first_name"
+            name="workspace_name"
             placeholder="Enter your Workspace name"
             autoComplete="off" />          
         </Form.Group>
 
-        <Form.Group controlId="last_name">
+        <Form.Group controlId="workspace_url">
           <Form.Label>WorkSpace URL (optional)</Form.Label>
+          <div className="input-group">
+	        <span className="input-group-text">https://</span>
           <Form.Control
             type="text"
-            name="last_name"
+            name="workspace_url"
             placeholder="Enter your Workspace URLs if any"
             autoComplete="off"/>
-          </Form.Group>
+           </div>
+          </Form.Group>         
           <br />
 
         <Button variant="primary" type="submit">

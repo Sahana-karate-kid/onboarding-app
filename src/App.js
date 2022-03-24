@@ -15,7 +15,7 @@ function App() {
         <Header />
       </div>
       <Routes>
-       <Route path="/" element={<FirstPage />} exact={true} className='progress-step'></Route>
+       <Route path="/" element={<FirstPage />} exact={true}></Route>
        <Route path="/Secondpage" element={<SecondPage />}></Route>
        <Route path="/Thirdpage" element={<ThirdPage />}></Route>
        <Route path="/FinalPage" element={<FinalPage />}></Route>

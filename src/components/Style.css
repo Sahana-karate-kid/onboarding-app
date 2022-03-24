@@ -65,4 +65,11 @@
  .progress-step-active {
     background-color: var(--primary-color);
     color: #f3f3f3;
+    text-align: center;
+
+  }
+
+  .card:hover {
+    cursor: pointer;
+    box-shadow: #666;
   }
