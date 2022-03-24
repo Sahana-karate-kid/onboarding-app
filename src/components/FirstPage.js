@@ -11,7 +11,7 @@ function FirstPage () {
   
   const onSubmit = async data => { 
     console.log(data);
-    localStorage.setItem("DISPLAY", data.display_name)
+    sessionStorage.setItem("DISPLAY", data.display_name)
     navigate('/SecondPage');   
 
 
@@ -47,7 +47,7 @@ function FirstPage () {
               required: 'Display name is required.'})}/>
           </Form.Group> 
           <br />
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" className='launch__button' onSubmit={handleSubmit(onSubmit)}>
           Next
         </Button>
       </div>

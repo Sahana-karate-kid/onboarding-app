@@ -1,10 +1,10 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import './Style.css';
 
 
-function FinalPage(props) {
-  const displayName = localStorage.getItem('DISPLAY');
+function FinalPage() {
+  const displayName = sessionStorage.getItem('DISPLAY');
 
   return (
     <div className='main__div'>

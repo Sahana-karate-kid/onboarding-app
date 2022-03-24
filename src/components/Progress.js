@@ -7,10 +7,10 @@ function Progress() {
     let location = useLocation();
 
     useEffect(() => {
-        //Checks if location.pathname is not "/".
+        
         if (location.pathname) 
             setInIndex(location.pathname);
-      }, [location]); // <-- add location to dependency array
+      }, [location]); 
     
       console.log(inIndex); 
     return (
